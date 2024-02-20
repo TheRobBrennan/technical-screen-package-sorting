@@ -211,4 +211,19 @@ To set up a greenfield environment for developing and iterating with [Next.js](h
 # https://vercel.com/templates/next.js/nextjs-fastapi-starter
 % npx create-next-app nextjs-fastapi --example "https://github.com/digitros/nextjs-fastapi"
 
+# As of this writing, the Next.js + FastAPI Starter is using Next.js v13. Let's upgrade to the latest.
+
+# Update to Next.js v14
+# https://nextjs.org/docs/app/building-your-application/upgrading/version-14
+% npm i next@latest react@latest react-dom@latest eslint-config-next@latest
+
+# Run the development server
+% npm run dev
+
 ```
+
+The Next.js application will be available locally at [http://localhost:3000](http://localhost:3000)
+
+The FastAPI application will be available locally at [http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+- The example endpoint will be available locally at [http://127.0.0.1:8000/api/ping](http://127.0.0.1:8000/api/ping)
