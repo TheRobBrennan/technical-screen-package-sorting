@@ -165,14 +165,50 @@ To set up a greenfield environment for developing and iterating on my [Python](h
 
 ```
 
-### Road map
-
-We will create greenfield projects for:
-
-### Next.js
-
-#### RECIPE: Set up a greenfield Next.js project
+### Next.js + FastAPI
 
 Key technologies:
 
 - [Next.js](https://nextjs.org)
+- [Python](https://www.python.org)
+  - [FastAPI](https://fastapi.tiangolo.com)
+
+We will use the [Next.js FastAPI Starter](https://vercel.com/templates/next.js/nextjs-fastapi-starter) at [https://vercel.com/templates/next.js/nextjs-fastapi-starter](https://vercel.com/templates/next.js/nextjs-fastapi-starter).
+
+The Python/FastAPI server is mapped to the Next.js app under `/api/`. This is implemented using `next.config.js` rewrites to map any request to `/api/:path` to the FastAPI API.
+
+On localhost, the rewrite will be made to the `127.0.0.1:8000` - which is where the FastAPI server is running.
+In production, the FastAPI server is hosted as [Python serverless functions](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python) on [Vercel](https://vercel.com).
+
+To get up and running with the existing code:
+
+```sh
+# Navigate to the directory
+% cd recipes/nextjs-fastapi
+
+# Install dependencies
+% npm install
+
+# Run the development server
+% npm run dev
+```
+
+The Next.js application will be available locally at [http://localhost:3000](http://localhost:3000)
+
+The FastAPI application will be available locally at [http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+- The example endpoint will be available locally at [http://127.0.0.1:8000/api/ping](http://127.0.0.1:8000/api/ping)
+
+#### RECIPE: Set up a greenfield Next.js + FastAPI project
+
+To set up a greenfield environment for developing and iterating with [Next.js](https://nextjs.org) and [FastAPI](https://fastapi.tiangolo.com), we will use the Next.js FastAPI Starter template as recommended by [Vercel](https://vercel.com/templates):
+
+```sh
+# Navigate to the recipes directory
+% cd recipes
+
+# Use create-next-app to create a fresh Next.js application using the Next.js + FastAPI starter
+# https://vercel.com/templates/next.js/nextjs-fastapi-starter
+% npx create-next-app nextjs-fastapi --example "https://github.com/digitros/nextjs-fastapi"
+
+```
