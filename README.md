@@ -48,10 +48,10 @@ To set up a greenfield environment for developing and iterating on my [TypeScrip
 
 ```sh
 # Create the directory
-% mkdir typescript-solution
+% mkdir recipes/typescript
 
 # Navigate to the directory
-% cd typescript-solution
+% cd typescript
 
 # Configure TypeScript by creating our tsconfig.json file
 % touch tsconfig.json
