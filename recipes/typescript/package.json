@@ -5,6 +5,7 @@
   "scripts": {
     "prebuild": "rm -rf dist",
     "build": "tsc",
+    "postbuild": "npm run start:prod",
     "start": "npm run start:dev",
     "start:prod": "node dist/src/main.js",
     "start:dev": "ts-node src/main.ts",
