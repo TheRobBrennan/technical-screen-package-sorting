@@ -1,0 +1,18 @@
+{
+  "name": "technical-screen-package-sorting",
+  "version": "0.0.0",
+  "description": "This project explores my approach and solution for a [technical screen](https://thoughtfulautomation.notion.site/Technical-Screen-b61b6f6980714c198dc49b91dd23d695) request from [Thoughtful.AI](https://www.thoughtful.ai)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheRobBrennan/technical-screen-package-sorting.git"
+  },
+  "author": "Rob Brennan <rob@therobbrennan.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheRobBrennan/technical-screen-package-sorting/issues"
+  },
+  "homepage": "https://github.com/TheRobBrennan/technical-screen-package-sorting#readme"
+}
