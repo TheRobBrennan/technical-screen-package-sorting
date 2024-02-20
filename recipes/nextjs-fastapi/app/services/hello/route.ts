@@ -11,5 +11,5 @@ export function GET(
   res: NextApiResponse<ResponseData>
 ) {
   // "2024-02-20T23:23:51.873Z"
-  return Response.json({ message: 'Hello from the App Router API!', timestamp: new Date().toISOString() })
+  return res.json({ message: 'Hello from the App Router API!', timestamp: new Date().toISOString() })
 }
