@@ -170,6 +170,8 @@ To set up a greenfield environment for developing and iterating on my [Python](h
 Key technologies:
 
 - [Next.js](https://nextjs.org)
+- [TypeScript](https://www.typescriptlang.org)
+
 - [Python](https://www.python.org)
   - [FastAPI](https://fastapi.tiangolo.com)
 
