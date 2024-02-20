@@ -11,6 +11,7 @@
     "lint": "next lint",
     "clear:ports": "kill -9 $(lsof -t -i :3000) && kill -9 $(lsof -t -i :8000)",
     "test": "jest",
+    "test:coverage": "jest --coverage && open coverage/lcov-report/index.html",
     "test:watch": "jest --watch"
   },
   "dependencies": {
