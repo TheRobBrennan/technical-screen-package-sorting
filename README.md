@@ -170,10 +170,12 @@ To set up a greenfield environment for developing and iterating on my [Python](h
 Key technologies:
 
 - [Next.js](https://nextjs.org)
-- [TypeScript](https://www.typescriptlang.org)
+  - [TypeScript](https://www.typescriptlang.org)
+  - [Jest](https://jestjs.io)
 
 - [Python](https://www.python.org)
   - [FastAPI](https://fastapi.tiangolo.com)
+  - [pytest](https://www.pytest.org)
 
 We will use the [Next.js FastAPI Starter](https://vercel.com/templates/next.js/nextjs-fastapi-starter) at [https://vercel.com/templates/next.js/nextjs-fastapi-starter](https://vercel.com/templates/next.js/nextjs-fastapi-starter).
 
@@ -195,18 +197,26 @@ To get up and running with the existing code:
 
 # Run the development server
 % npm run dev
+
+# Run tests for the Next.js + FastAPI code
+% npm test
+
+# Run tests for the Next.js + FastAPI code and open code coverage reports
+% npm run test:coverage
+
 ```
 
 Next.js URLs
 
 - The Next.js application will be available locally at [http://localhost:3000](http://localhost:3000)
-- An example `hello` endpoint will be available locally at [http://localhost:3000/services/hello](http://localhost:3000/services/hello)
-- `/api/*` routes are served by the FastAPI application
+- `/services/*` routes are served by the Next.js application
+  - An example `hello` endpoint will be available locally at [http://localhost:3000/services/hello](http://localhost:3000/services/hello)
 
 FastAPI URLs
 
 - The FastAPI application will be available locally at [http://127.0.0.1:8000](http://127.0.0.1:8000)
-- An example `ping` endpoint will be available locally at [http://127.0.0.1:8000/api/ping](http://127.0.0.1:8000/api/ping)
+- `/api/*` routes are served by the FastAPI application
+  - An example `ping` endpoint will be available locally at [http://127.0.0.1:8000/api/ping](http://127.0.0.1:8000/api/ping)
 
 #### RECIPE: Set up a greenfield Next.js + FastAPI project
 
@@ -234,10 +244,11 @@ To set up a greenfield environment for developing and iterating with [Next.js](h
 Next.js URLs
 
 - The Next.js application will be available locally at [http://localhost:3000](http://localhost:3000)
-- An example `hello` endpoint will be available locally at [http://localhost:3000/services/hello](http://localhost:3000/services/hello)
-- `/api/*` routes are served by the FastAPI application
+- `/services/*` routes are served by the Next.js application
+  - An example `hello` endpoint will be available locally at [http://localhost:3000/services/hello](http://localhost:3000/services/hello)
 
 FastAPI URLs
 
 - The FastAPI application will be available locally at [http://127.0.0.1:8000](http://127.0.0.1:8000)
-- An example `ping` endpoint will be available locally at [http://127.0.0.1:8000/api/ping](http://127.0.0.1:8000/api/ping)
+- `/api/*` routes are served by the FastAPI application
+  - An example `ping` endpoint will be available locally at [http://127.0.0.1:8000/api/ping](http://127.0.0.1:8000/api/ping)

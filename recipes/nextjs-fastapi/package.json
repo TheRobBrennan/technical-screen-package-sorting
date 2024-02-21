@@ -12,9 +12,13 @@
     "start": "next start",
     "lint": "next lint",
     "clear:ports": "kill -9 $(lsof -t -i :3000) && kill -9 $(lsof -t -i :8000)",
-    "test": "jest",
-    "test:coverage": "jest --coverage && open coverage/lcov-report/index.html",
-    "test:watch": "jest --watch"
+    "test": "concurrently \"npm run test:app\" \"npm run test:api\"",
+    "test:coverage": "concurrently \"npm run test:app:coverage\" \"npm run test:api:coverage\"",
+    "test:app": "jest",
+    "test:app:coverage": "jest --coverage && open coverage/lcov-report/index.html",
+    "test:app:watch": "jest --watch",
+    "test:api": "npm run fastapi-test",
+    "test:api:coverage": "npm run fastapi-test:coverage"
   },
   "dependencies": {
     "@types/node": "20.2.4",
