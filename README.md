@@ -6,7 +6,31 @@ This project explores my approach and solution for a [technical screen](https://
 
 For this particular example, I wanted to demonstrate how I would approach solving this with [TypeScript](https://www.typescriptlang.org) and [Python](https://www.python.org). 🤓
 
+TL;DR
+
+If you already have [Node.js](https://nodejs.org), `npm`, and [Python](https://www.python.org) installed on your system, you can run the following scripts to see my solutions in action 🤓
+
+```sh
+# Pull the trigger and run both TypeScript and Python solutions
+% npm start
+
+# TypeScript solution
+% npm run typescript:solution
+
+# Python solution
+% npm run python:solution
+
+```
+
 ### TypeScript
+
+To run the TypeScript solution from the project root:
+
+```sh
+# TypeScript solution
+% npm run typescript:solution
+
+```
 
 ![Screencast of the TypeScript solution](./solutions/typescript/assets/Feb-20-2024%2023-03-09.gif)
 
@@ -43,6 +67,14 @@ For this particular example, I wanted to demonstrate how I would approach solvin
 ```
 
 ### Python
+
+To run the Python solution from the project root:
+
+```sh
+# Python solution
+% npm run python:solution
+
+```
 
 ![Screencast of the Python solution](./solutions/python/assets/Feb-20-2024%2023-17-23.gif)
 
