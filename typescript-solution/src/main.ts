@@ -1,1 +1,12 @@
-console.log(`Thank you for looking at my TypeScript solution.\nPlease run "npm install" to install the dependencies and then "npm run test" or "npm run test:coverage" to validate my solution.`)
+console.log(`
+Thank you for looking at my TypeScript solution.
+
+# Install project dependencies
+npm install
+
+# Run tests
+npm run test
+
+# Run tests with coverage reporting
+npm run test:coverage
+`)
