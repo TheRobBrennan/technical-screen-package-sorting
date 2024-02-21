@@ -1,3 +1,4 @@
+# src/lib/sort.py
 from .is_package_real import is_package_real
 from .is_special_handling_needed import is_special_handling_needed
 
