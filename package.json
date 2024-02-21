@@ -1,7 +1,7 @@
 {
   "name": "technical-screen-package-sorting",
   "version": "0.0.0",
-  "description": "This project explores my approach and solution for a [technical screen](https://thoughtfulautomation.notion.site/Technical-Screen-b61b6f6980714c198dc49b91dd23d695) request from [Thoughtful.AI](https://www.thoughtful.ai)",
+  "description": "This project explores my approach and solution for a technical screen - creating solutions in both TypeScript and Python",
   "scripts": {
     "typescript:solution": "sh scripts/run_typescript.sh",
     "python:solution": "sh scripts/run_python.sh",
