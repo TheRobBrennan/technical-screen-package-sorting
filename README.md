@@ -109,9 +109,6 @@ To get up and running with the existing code:
 
 # Deactivate your virtual environment
 (.venv) % deactivate
-
-# Deactivate your virtual environment
-(.venv) % deactivate
 ```
 
 #### RECIPE: Set up a greenfield Python project
