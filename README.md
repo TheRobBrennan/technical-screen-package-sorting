@@ -18,7 +18,7 @@ To get up and running with the existing code:
 
 ```sh
 # Navigate to the directory
-% cd recipes/typescript-solution
+% cd recipes/typescript
 
 # Install dependencies
 % npm install
