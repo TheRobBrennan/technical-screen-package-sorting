@@ -62,14 +62,17 @@ For this particular example, I wanted to demonstrate how I would approach solvin
 # To run tests:
 (.venv) % pytest
 
-# To run tests with verbose output:
-(.venv) % pytest -v
-
 # To run tests and automatically view the HTML coverage report on macOS:
 (.venv) % pytest --cov=. --cov-report=html && open htmlcov/index.html
 
+# To run tests with verbose output:
+(.venv) % pytest -v
+
+# To run tests with verbose output and automatically view the HTML coverage report on macOS:
+(.venv) % pytest -v --cov=. --cov-report=html && open htmlcov/index.html
+
 # To run a single unit test
-(.venv) % pytest tests/lib/test_math.py
+(.venv) % pytest tests/lib/test_sort.py
 
 # Deactivate your virtual environment
 (.venv) % deactivate
@@ -181,11 +184,14 @@ To get up and running with the existing code:
 # To run tests:
 (.venv) % pytest
 
+# To run tests and automatically view the HTML coverage report on macOS:
+(.venv) % pytest --cov=. --cov-report=html && open htmlcov/index.html
+
 # To run tests with verbose output:
 (.venv) % pytest -v
 
-# To run tests and automatically view the HTML coverage report on macOS:
-(.venv) % pytest --cov=. --cov-report=html && open htmlcov/index.html
+# To run tests with verbose output and automatically view the HTML coverage report on macOS:
+(.venv) % pytest -v --cov=. --cov-report=html && open htmlcov/index.html
 
 # To run a single unit test
 (.venv) % pytest tests/lib/test_math.py
