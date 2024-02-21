@@ -21,6 +21,12 @@ This project explores my approach and solution for a [technical screen](https://
 ## EXAMPLE: Run tests and generate a code coverage report
 % npm run test:coverage
 
+## EXAMPLE: Run tests with verbose output
+% npm run test:verbose
+
+## EXAMPLE: Run tests with verbose output and generate a code coverage report
+% npm run test:verbose:coverage
+
 ## EXAMPLE: Run code in development
 % npm start
 
@@ -60,6 +66,12 @@ To get up and running with the existing code:
 
 ## EXAMPLE: Run tests and generate a code coverage report
 % npm run test:coverage
+
+## EXAMPLE: Run tests with verbose output
+% npm run test:verbose
+
+## EXAMPLE: Run tests with verbose output and generate a code coverage report
+% npm run test:verbose:coverage
 
 ## EXAMPLE: Run code in development
 % npm start

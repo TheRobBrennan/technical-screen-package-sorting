@@ -10,4 +10,11 @@ npm run test
 
 # Run tests with coverage reporting
 npm run test:coverage
+
+# Run tests with verbose output
+npm run test:verbose
+
+# Run tests with verbose output and coverage reporting
+npm run test:verbose:coverage
+
 `)

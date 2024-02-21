@@ -10,7 +10,9 @@
     "start:prod": "node dist/src/main.js",
     "start:dev": "ts-node src/main.ts",
     "test": "jest",
-    "test:coverage": "jest --coverage && open coverage/lcov-report/index.html"
+    "test:coverage": "jest --coverage && open coverage/lcov-report/index.html",
+    "test:verbose": "jest --verbose",
+    "test:verbose:coverage": "npm run test:verbose && npm run test:coverage"
   },
   "keywords": [],
   "author": "Rob Brennan <rob@therobbrennan.com>",
