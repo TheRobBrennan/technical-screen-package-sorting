@@ -1,10 +1,41 @@
 # Welcome
 
-This project explores my approach and solution for a [technical screen](https://thoughtfulautomation.notion.site/Technical-Screen-b61b6f6980714c198dc49b91dd23d695) request from [Thoughtful.AI](https://www.thoughtful.ai)
+This project explores my approach and solution for a requested technical screen.
 
-## Solutions
+_Solution #1 - TypeScript_
+![Screencast of the TypeScript solution](./solutions/typescript/assets/Feb-20-2024%2023-03-09.gif)
 
-For this particular example, I wanted to demonstrate how I would approach solving this with [TypeScript](https://www.typescriptlang.org) and [Python](https://www.python.org). 🤓
+_Solution #2 - Python_
+![Screencast of the Python solution](./solutions/python/assets/Feb-20-2024%2023-17-23.gif)
+
+## The Challenge
+
+I've included the requirements from the challenge for reference.
+
+### Objective
+
+Imagine you work in a robotic automation factory, and your objective is to write a function for one of its robotic arms that will dispatch the packages to the correct stack according to their volume and mass.
+
+### Rules
+
+Sort the packages using the following criteria:
+
+- A package is **bulky** if its volume (Width x Height x Length) is greater than or equal to 1,000,000 cm³ or when one of its dimensions is greater or equal to 150 cm.
+- A package is **heavy** when its mass is greater or equal to 20 kg.
+
+You must dispatch the packages in the following stacks:
+
+- **STANDARD**: standard packages (those that are not bulky or heavy) can be handled normally.
+- **SPECIAL**: packages that are either heavy or bulky can't be handled automatically.
+- **REJECTED**: packages that are **both** heavy and bulky are rejected.
+
+### Implementation
+
+Implement the function **`sort(width, height, length, mass)`** (units are centimeters for the dimensions and kilogram for the mass). This function must return a string: the name of the stack where the package should go.
+
+## My solution
+
+For this particular example, I wanted to demonstrate how I would solve this challenge - creating two solutions to demonstrate my style and approach with [TypeScript](https://www.typescriptlang.org) and [Python](https://www.python.org). 🤓
 
 TL;DR
 
@@ -31,8 +62,6 @@ To run the TypeScript solution from the project root:
 % npm run typescript:solution
 
 ```
-
-![Screencast of the TypeScript solution](./solutions/typescript/assets/Feb-20-2024%2023-03-09.gif)
 
 ```sh
 # Navigate to the directory
@@ -75,8 +104,6 @@ To run the Python solution from the project root:
 % npm run python:solution
 
 ```
-
-![Screencast of the Python solution](./solutions/python/assets/Feb-20-2024%2023-17-23.gif)
 
 ```sh
 # Navigate to the directory
