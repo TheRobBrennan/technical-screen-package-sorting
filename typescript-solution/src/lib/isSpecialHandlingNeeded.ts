@@ -1,4 +1,4 @@
-// src/lib/isSpecializedHandlingNeeded.ts
+// src/lib/isSpecialHandlingNeeded.ts
 
 import { isPackageBulky } from "./isPackageBulky";
 import { isPackageHeavy } from "./isPackageHeavy";
