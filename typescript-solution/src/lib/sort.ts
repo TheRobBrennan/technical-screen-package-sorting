@@ -1,6 +1,5 @@
-import { isPackageBulky } from "./isPackageBulky";
-import { isPackageHeavy } from "./isPackageHeavy";
 import { isPackageReal } from "./isPackageReal";
+import { isSpecialHandlingNeeded } from "./isSpecialHandlingNeeded";
 
 type Stack = 'STANDARD' | 'SPECIAL' | 'REJECTED';
 
@@ -13,19 +12,13 @@ type Stack = 'STANDARD' | 'SPECIAL' | 'REJECTED';
  * @returns string containing the Stack this package should be placed in.
  */
 export function sort(width: number, height: number, length: number, mass: number): Stack {
-  // Reject non-sensical package dimensions and/or mass
-  if (isPackageReal(width, height, length, mass) === false) {
+  if (!isPackageReal(width, height, length, mass)) {
     return 'REJECTED';
   }
 
-  // Specialized handling is necessary for heavy and/or bulky packages
-  const isHeavy = isPackageHeavy(mass)
-  const isBulky = isPackageBulky(width, height, length);
-
-  if (isHeavy || isBulky) {
+  if (isSpecialHandlingNeeded(width, height, length, mass)) {
     return 'SPECIAL';
   }
 
-  // No special handling is necessary 🤓
   return 'STANDARD';
 }
