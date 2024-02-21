@@ -8,6 +8,8 @@ For this particular example, I wanted to demonstrate how I would approach solvin
 
 ### TypeScript
 
+![Screencast of the TypeScript solution](./solutions/typescript/assets/Feb-20-2024%2023-03-09.gif)
+
 ```sh
 # Navigate to the directory
 % cd solutions/typescript
@@ -41,6 +43,8 @@ For this particular example, I wanted to demonstrate how I would approach solvin
 ```
 
 ### Python
+
+![Screencast of the Python solution](./solutions/python/assets/Feb-20-2024%2023-17-23.gif)
 
 ```sh
 # Navigate to the directory
