@@ -1,3 +1,4 @@
+// tests/lib/isPackageHeavy.test.ts
 import { isPackageHeavy } from '../../src/lib/isPackageHeavy';
 import { STANDARD_PACKAGE } from '../../src/constants';
 

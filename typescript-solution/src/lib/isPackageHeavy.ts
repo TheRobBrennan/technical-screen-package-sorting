@@ -1,3 +1,4 @@
+// src/lib/isPackageHeavy.ts
 import { STANDARD_PACKAGE } from "../constants";
 
 /**

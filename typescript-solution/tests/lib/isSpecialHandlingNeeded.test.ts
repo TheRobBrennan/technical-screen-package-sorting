@@ -1,4 +1,4 @@
-// tests/lib/isSpecializedHandlingNeeded.test.ts
+// tests/lib/isSpecialHandlingNeeded.test.ts
 import { isSpecialHandlingNeeded } from '../../src/lib/isSpecialHandlingNeeded';
 import { STANDARD_PACKAGE } from '../../src/constants';
 

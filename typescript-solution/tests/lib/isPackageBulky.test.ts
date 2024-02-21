@@ -1,3 +1,4 @@
+// tests/lib/isPackageBulky.test.ts
 import { isPackageBulky } from '../../src/lib/isPackageBulky';
 import { STANDARD_PACKAGE } from '../../src/constants';
 

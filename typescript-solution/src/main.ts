@@ -1,3 +1,4 @@
+// src/main.ts
 console.log(`
 Thank you for looking at my TypeScript solution.
 
