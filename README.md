@@ -2,7 +2,9 @@
 
 This project explores my approach and solution for a [technical screen](https://thoughtfulautomation.notion.site/Technical-Screen-b61b6f6980714c198dc49b91dd23d695) request from [Thoughtful.AI](https://www.thoughtful.ai)
 
-## Solution
+## Solutions
+
+For this particular example, I wanted to demonstrate how I would approach solving this with [TypeScript](https://www.typescriptlang.org) and [Python](https://www.python.org). 🤓
 
 ### TypeScript
 
@@ -35,6 +37,45 @@ This project explores my approach and solution for a [technical screen](https://
 
 ## EXAMPLE: Run production code after building the project
 % npm run start:prod
+
+```
+
+### Python
+
+```sh
+# Navigate to the directory
+% cd python-solution
+
+# Initialize the Python virtual environment
+% python3 -m venv .venv
+
+# Activate the Python virtual environment
+# On Windows, use `.venv\Scripts\activate`
+% source .venv/bin/activate
+
+# Install the packages from requirements.txt
+(.venv) % pip install -r requirements.txt
+
+# To run the code:
+(.venv) % python3 src/main.py
+
+# To run tests:
+(.venv) % pytest
+
+# To run tests and automatically view the HTML coverage report on macOS:
+(.venv) % pytest --cov=. --cov-report=html && open htmlcov/index.html
+
+# To run tests with verbose output:
+(.venv) % pytest -v
+
+# To run tests with verbose output and automatically view the HTML coverage report on macOS:
+(.venv) % pytest -v --cov=. --cov-report=html && open htmlcov/index.html
+
+# To run a single unit test
+(.venv) % pytest tests/lib/test_sort.py
+
+# Deactivate your virtual environment
+(.venv) % deactivate
 
 ```
 
@@ -146,8 +187,14 @@ To get up and running with the existing code:
 # To run tests and automatically view the HTML coverage report on macOS:
 (.venv) % pytest --cov=. --cov-report=html && open htmlcov/index.html
 
+# To run tests with verbose output:
+(.venv) % pytest -v
+
+# To run tests with verbose output and automatically view the HTML coverage report on macOS:
+(.venv) % pytest -v --cov=. --cov-report=html && open htmlcov/index.html
+
 # To run a single unit test
-(.venv) % pytest pytest tests/lib/test_math.py
+(.venv) % pytest tests/lib/test_math.py
 
 # Deactivate your virtual environment
 (.venv) % deactivate
@@ -197,7 +244,7 @@ To set up a greenfield environment for developing and iterating on my [Python](h
 (.venv) % pytest --cov=. --cov-report=html && open htmlcov/index.html
 
 # To run a single unit test
-(.venv) % pytest pytest tests/lib/test_math.py
+(.venv) % pytest tests/lib/test_math.py
 
 # Deactivate your virtual environment
 (.venv) % deactivate
