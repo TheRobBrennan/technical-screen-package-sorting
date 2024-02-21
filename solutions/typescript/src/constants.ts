@@ -1,0 +1,8 @@
+// src/constants.ts
+export const STANDARD_PACKAGE = {
+  MAX_HEIGHT_IN_CM: 150,
+  MAX_LENGTH_IN_CM: 150,
+  MAX_MASS_IN_KG: 20,
+  MAX_VOLUME_IN_CUBIC_CM: 1_000_000,
+  MAX_WIDTH_IN_CM: 150
+};

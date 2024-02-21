@@ -1,0 +1,36 @@
+{
+  "name": "typescript-solution",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "postbuild": "npm run start:prod",
+    "start": "npm run start:dev",
+    "start:prod": "node dist/src/main.js",
+    "start:dev": "ts-node src/main.ts",
+    "test": "jest",
+    "test:coverage": "jest --coverage && open coverage/lcov-report/index.html",
+    "test:verbose": "jest --verbose",
+    "test:verbose:coverage": "npm run test:verbose && npm run test:coverage"
+  },
+  "keywords": [],
+  "author": "Rob Brennan <rob@therobbrennan.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "testMatch": [
+      "**/*.test.ts"
+    ]
+  }
+}
