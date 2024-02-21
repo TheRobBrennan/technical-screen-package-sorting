@@ -2,6 +2,42 @@
 
 This project explores my approach and solution for a [technical screen](https://thoughtfulautomation.notion.site/Technical-Screen-b61b6f6980714c198dc49b91dd23d695) request from [Thoughtful.AI](https://www.thoughtful.ai)
 
+## Solution
+
+### TypeScript
+
+```sh
+# Navigate to the directory
+% cd typescript-solution
+
+# Install dependencies
+% npm install
+
+# Run scripts as desired 🤓
+
+## EXAMPLE: Run tests
+% npm test
+
+## EXAMPLE: Run tests and generate a code coverage report
+% npm run test:coverage
+
+## EXAMPLE: Run tests with verbose output
+% npm run test:verbose
+
+## EXAMPLE: Run tests with verbose output and generate a code coverage report
+% npm run test:verbose:coverage
+
+## EXAMPLE: Run code in development
+% npm start
+
+## EXAMPLE: Build project
+% npm run build
+
+## EXAMPLE: Run production code after building the project
+% npm run start:prod
+
+```
+
 ## Architecture
 
 Before we get into the meat of coding the solution for the challenge, I will use this opportunity to create three greenfield projects as a starting point.
@@ -30,6 +66,12 @@ To get up and running with the existing code:
 
 ## EXAMPLE: Run tests and generate a code coverage report
 % npm run test:coverage
+
+## EXAMPLE: Run tests with verbose output
+% npm run test:verbose
+
+## EXAMPLE: Run tests with verbose output and generate a code coverage report
+% npm run test:verbose:coverage
 
 ## EXAMPLE: Run code in development
 % npm start
