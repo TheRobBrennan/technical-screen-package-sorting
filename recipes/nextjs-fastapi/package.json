@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "fastapi-dev": "pip3 install -r requirements.txt && python3 -m uvicorn api.index:app --reload",
+    "fastapi-test": "pip3 install -r requirements.txt && pytest",
+    "fastapi-test:coverage": "pip3 install -r requirements.txt && pytest --cov=. --cov-report=html && open htmlcov/index.html",
     "next-dev": "next dev",
     "dev": "concurrently \"npm run next-dev\" \"npm run fastapi-dev\"",
     "build": "next build",
